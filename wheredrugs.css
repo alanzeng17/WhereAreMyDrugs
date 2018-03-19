@@ -1,17 +1,41 @@
 body{
 	
-	background-color: rgb(217, 179, 140);
+	
 }
 
 h1{
 	font-family: Verdana, Geneva, Arial, sans-serif;
 }
 
+
+*.header{
+
+
+	border-bottom: 1px double;
+	vertical-align: middle;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+*.footer{
+
+	position: absolute;
+	top: 1000px;
+	left: 15px;
+	clear: both;
+	width: 1007px;
+	border-top: 1px double;
+
+}
+
 table {
 
 	width: 50%;
-	border: 5px solid black;
-	background-color: rgb(153, 77, 0);
+	border: 1px solid black;
+	text-align: center;
+	
 }
 
 td {

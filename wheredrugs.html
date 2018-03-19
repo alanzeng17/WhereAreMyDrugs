@@ -1,50 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset = "utf-8">
-	<title>Is This Covered?</title>
-	<link rel = "stylesheet" type = "text/css" href="./wheredrugs.css" media = "all" />
+  <meta charset = "utf-8">
+  <title> Is This Covered?</title>
+  <link rel = "stylesheet" type = "text/css" href="./wheredrugs.css" media = "all" />
 </head>
-
 <body>
-<h1>Is This Medication Covered By My Insurance?</h1>
-<form method = "post" action = "">
-<table>
 
+<div class = 'header'>
+  <h2 class = name>Is This Covered?</h2>
+</div>
 
-
-<tr class = 'insurance'>
-	<td>
-
-      <label> Medical Insurance:
-      <select name = "rating">
-          <option selected = "selected"> Blue Cross Blue Shield</option>
-	  <option> eHealth </option>
-	  <option> Humana </option>
-	</select>
-      </label>
-    </td>
-  
-</tr>
+<div class = 'form'>
+<form method = "post" action = "http://www.cknuckles.com/cgi/echo.cgi">
+<table align="center">
 
 <tr class = 'problem'>
-	<td>
+  <td>
 
       <label> Choose your illness or medical problem:
       <select name = "rating">
           <option selected = "selected"> Cold</option>
-	  <option> Fever </option>
-	  <option> Strep Throat </option>
-	  <option> Flue </option>
-	</select>
+    <option> Fever </option>
+    <option> Strep Throat </option>
+    <option> Flue </option>
+  </select>
       </label>
     </td>
   
 </tr>
 
 
+<tr class = 'insurance'>
+  <td>
 
-
+      <label> Medical Insurance:
+      <select name = "rating">
+          <option selected = "selected"> Blue Cross Blue Shield</option>
+    <option> eHealth </option>
+    <option> Humana </option>
+  </select>
+      </label>
+    </td>
+  
+</tr>
 
 <tr class = 'buttons'>
   <td>
@@ -54,7 +53,24 @@
 </tr>
 
 </table>
+
 </form>
 
+
+
+
+
+<div class = 'footer'>
+<p>Created by: Alan Zeng, Brian Hong, Saideep Vollala, Alex Kaish, Saumil Parikh, and Belinda Chang</p>
+
+
+</div>
+
+
+
+
+
 </body>
+
+
 </html>

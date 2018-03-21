@@ -1,3 +1,4 @@
+/* React Defaults */
 .App {
   text-align: center;
 }
@@ -17,39 +18,128 @@
   font-size: 1.5em;
 }
 
-.body{
-  text-align: center;
-}
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
-body{
-	text-align: center;
-	background-color: rgb(217, 179, 140);
+
+/* Nav bar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  text-align: center;
+}
+a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+#name {
+  text-align: center;
+}
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/*li a:hover {
+  
+}*/
+/* Main Component */
+.main {
+  background-image: url("https://i.imgur.com/Umw1R5m.jpg");
+  height: 105vh;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+.startComp {
+}
+/* Start Component */
+.start {
+  text-align: center;
+  
+}
+.outer {
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
 
-h1{
-	font-family: Verdana, Geneva, Arial, sans-serif;
+.middle {
+  display: table-cell;
+  vertical-align: middle;
 }
 
-table {
-
-	width: 50%;
-	border: 5px solid black;
-	background-color: rgb(153, 77, 0);
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px; /*whatever width you want*/
+  color: #fff;
+  
+}
+.cool {
+  background-color: Transparent;
+  color: #ffffff;
+  font-size: 17px;
+  padding: 9px 60px 9px 60px;
+  border: solid #ffffff 1px;
+  text-decoration: none;
+}
+  
+.cool:hover {
+    text-decoration: none;
+    background-color: white;
+    color: black;
 }
 
-td {
-
-	font-family: Arial, Times, Serif;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
-    font-weight: bold;
+h1 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 300;
+}
+h2 {
+  font-family: Palantino;
+  font-weight: 10;
+}
+h4 {
+  font-family: Palantino;
+  font-weight: 10;
 }
 
-*.buttons{
+/* Illness Component */
+label {
+  font-weight: 10;
+  font-size: 10px;
+  font-family: Arial;
+}
+select {
+  position: relative;
+  font-family: Arial;
+  font-size: 14px;
+  background-color: transparent;
+  width: 100px;
+  height: 30px;
+  color: white;
+}
+option {
+  font-size: 50px;
+}
+.ill {
+  margin: auto;
+  padding: 5px;
   text-align: center;
 }

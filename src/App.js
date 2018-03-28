@@ -22,18 +22,19 @@ class Start extends React.Component {
       value: 0,
     };
   }
-  
+
   render() {
     var ret1;
     if (this.state.value == 0){
-      ret1 = (      
+      ret1 = (
       <div class="start">
         <div class="outer">
           <div class="middle">
             <div class="inner">
               <h1>ApotheCare</h1>
               <h4>Find the appropriate medicine for you!</h4>
-              <button class="cool" onClick={() => ak(this)}> Start </button>          
+              <button class="cool" onClick={() => ak(this)}> Start </button>
+
             </div>
           </div>
         </div>
@@ -49,7 +50,19 @@ class Start extends React.Component {
                 <h2 class='label'> Please choose your illness: </h2>
                 <select>
                   <option value="d">--Select--</option>
-                  <option value="1"> Flu </option>
+                  <option value="1"> Meningococcal Meningitis </option>
+                  <option value="2"> Influenza </option>
+                  <option value="3"> Food Borne Illness </option>
+                  <option value="4"> HIV </option>
+                  <option value="5"> Mono </option>
+                  <option value="6"> Strep </option>
+                  <option value="7"> HPV </option>
+                  <option value="8"> Pinkeye </option>
+                  <option value="9"> MRSA </option>
+                  <option value="10"> Pinkeye </option>
+                  <option value="11"> UTIs </option>
+                  <option value="12"> Athletes Foot </option>
+                  <option value="13"> Allergies </option>
                 </select>
                 <hr></hr>
                 <button class='cool'> Continue </button>
@@ -83,7 +96,7 @@ function ak(s) {
               </input>
             </div>
           </div>*/
-  
+
 }
 
 export default App;

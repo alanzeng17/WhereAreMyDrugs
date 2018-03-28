@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 var flag1 = false;
+var val = 0;
 class App extends React.Component {
   render() {
     return (
@@ -41,7 +42,7 @@ class Start extends React.Component {
       </div>
       );
     }
-    else {
+    if (this.state.value == 1) {
       ret1 = (
         <div class="outer">
           <div class="middle">
@@ -65,16 +66,40 @@ class Start extends React.Component {
                   <option value="13"> Allergies </option>
                 </select>
                 <hr></hr>
-                <button class='cool'> Continue </button>
+                <button class='cool' onClick={() => ak(this)}> Continue </button>
               </div>
             </div>
           </div>
         </div>
       );
     }
+
+    if (this.state.value == 2) {
+      ret1 = (
+        <div class="outer">
+          <div class="middle">
+            <div class="inner">
+              <div class="ill">
+                <h2 class='label'> Please choose your illness: </h2>
+                <p>asdfasdfasdfa</p>
+                <hr></hr>
+                <button class='cool' onClick={() => ak(this)}> Continue </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
     return (ret1)
   }
 }
+
+
+
+
+
+
 
 class Illness extends React.Component {
   render() {
@@ -84,10 +109,16 @@ class Illness extends React.Component {
   }
 }
 
+
 function ak(s) {
   //do something
   flag1 = true;
-  s.setState({value: 1})
+  val += 1;
+  if (val == 3){
+
+    val = 2;
+  }
+  s.setState({value: val})
   /*           <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn">Dropdown</button>
             <div id="myDropdown" class="dropdown-content">

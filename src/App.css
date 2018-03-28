@@ -136,7 +136,8 @@ select {
   color: white;
 }
 option {
-  font-size: 50px;
+  font-size: 20px;
+  color:black;
 }
 .ill {
   margin: auto;

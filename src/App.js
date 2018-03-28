@@ -79,9 +79,15 @@ class Start extends React.Component {
         <div class="outer">
           <div class="middle">
             <div class="inner">
-              <div class="ill">
-                <h2 class='label'> Please choose your illness: </h2>
-                <p>asdfasdfasdfa</p>
+              <div class="insurance">
+                <h2 class='label'> Choose the Insurance Are You Under: </h2>
+                <select>
+                  <option value="d">--Select--</option>
+                  <option value="1"> Blue Cross </option>
+                  <option value="2"> Humana </option>
+                  <option value="3"> Aetna</option>
+                  <option value="4"> Cigna </option>
+                </select>
                 <hr></hr>
                 <button class='cool' onClick={() => ak(this)}> Continue </button>
               </div>

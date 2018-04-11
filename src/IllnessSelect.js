@@ -11,7 +11,7 @@ class IllnessSelect extends React.Component {
       this.handleChange = this.handleChange.bind(this);
       this.handlePrint = this.handlePrint.bind(this);
     }
-  
+
      handlePrint() {
       if (this.state.value) {
         console.log(this.state.value);

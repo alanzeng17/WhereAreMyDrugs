@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+//import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import IllnessSelect from './IllnessSelect.js'
+import InsuranceSelect from './insuranceSelect';
 
 var flag1 = false;
 var globalState = null;
 var illnessVal = null;
+var insuranceVal = null;
+//Run the main component
 class App extends React.Component {
   render() {
     return (
@@ -19,6 +22,7 @@ class App extends React.Component {
   }
 }
 
+//Main componenet
 class Start extends React.Component {
   constructor(props){
     super(props)
@@ -30,6 +34,7 @@ class Start extends React.Component {
   
   render() {
     var ret1;
+    //Start Screen
     if (this.state.value == 0){
       ret1 = (      
       <div class="start">
@@ -45,6 +50,7 @@ class Start extends React.Component {
       </div>
       );
     }
+    //Select Illness Screen
     else if (this.state.value == 1){
       ret1 = (
         <div class="outer">
@@ -66,7 +72,10 @@ class Start extends React.Component {
       <div class="outer">
         <div class="middle">
           <div class="inner">
-            <p>{illnessVal}</p>
+            <div class = "ill">
+              <h2 class='label'> Please choose your insurance: </h2>
+                <InsuranceSelect />
+              </div>
           </div>
         </div>
       </div>
@@ -85,6 +94,9 @@ export const transition = (value)=>{
 
 export const getIllnessVal = (value)=>{
   illnessVal = value;
+}
+export const getInsuranceVal = (value) => {
+  insuranceVal = value;
 }
 
 

@@ -14,8 +14,6 @@ class IllnessSelect extends React.Component {
 
      handlePrint() {
       if (this.state.value) {
-        console.log(this.state.value);
-        alert(this.state.value);
         transition(2);
         getIllnessVal(this.state.value);
       }

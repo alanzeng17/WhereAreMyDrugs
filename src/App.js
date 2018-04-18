@@ -28,6 +28,7 @@ class Start extends React.Component {
     super(props)
     this.state = {
       value: 0,
+      flag1: 'no'
     };
     globalState = this;
   }
@@ -80,6 +81,26 @@ class Start extends React.Component {
         </div>
       </div>
       );
+    }
+    else if(this.state.value == 3) {
+      var info = "blank";
+      if (illnessVal === 'flu') {
+        //alert("bro")
+      }
+      else if(illnessVal === 'strep') {
+        //alert("yo");
+      }//ect.ect.
+      ret1 = (
+        <div class="outer">
+        <div class="middle">
+        <div class="inner">
+          <div class='ill'>
+            <h2>{info}</h2>
+          </div>
+        </div>
+        </div>
+        </div>
+      )
     }
     return (ret1)
   }

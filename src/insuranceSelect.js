@@ -16,16 +16,16 @@ constructor(props) {
 }
     handlePrint() {
         //TODO: handle "x" cases, make the transition invalid
-        if (this.state.value) {
+        if (this.state.value != 'xxx') {
             if(this.state.flag1 === 'yes')
-                alert("yoooo");//transition here
+                transition(4);//Enter prescription name
             else
-                alert(this.state.flag1); // transition here
-            transition(3);//remove this later, switch numbers.
+                transition(3);
+            //transition(3);//remove this later, switch numbers.
             getInsuranceVal(this.state.value);
         }
         else {
-            alert("failure");
+            alert("Please select an option.");
         }
     }
     handleChange(e) {
@@ -47,7 +47,7 @@ constructor(props) {
                 </select>
                 <h2>Do you have a Prescription?</h2>
                 <select class="dropdown" onChange={this.handleChange2}>
-                    <option value ='x'>-Select-</option>
+                    <option value ='xxx'>-Select-</option>
                     <option value="yes">Yes</option>
                     <option value="no">No</option>
                 </select>

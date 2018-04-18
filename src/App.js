@@ -82,6 +82,7 @@ class Start extends React.Component {
       </div>
       );
     }
+    //no presciption, display options that are covered
     else if(this.state.value == 3) {
       var info = "blank";
       if (illnessVal === 'flu') {
@@ -101,6 +102,11 @@ class Start extends React.Component {
         </div>
         </div>
       )
+    }
+    //yes prescription, check to see if it's covered
+    else if (this.state.value === 4) {
+      //search bar
+      //display result
     }
     return (ret1)
   }

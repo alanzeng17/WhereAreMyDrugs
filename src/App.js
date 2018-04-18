@@ -54,7 +54,7 @@ class Start extends React.Component {
     //Select Illness Screen
     else if (this.state.value == 1){
       ret1 = (
-        <div class="outer">
+        <div class="outer">//
           <div class="middle">
             <div class="inner">
               <div class="ill">

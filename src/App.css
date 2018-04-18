@@ -133,10 +133,13 @@ select {
   background-color: transparent;
   width: 100px;
   height: 30px;
-  color: black;
+  color: white;
 }
 option {
   font-size: 50px;
+  width: 100px;
+  height: 20px;
+  color: black;
 }
 .ill {
   margin: auto;

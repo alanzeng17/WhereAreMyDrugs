@@ -54,7 +54,7 @@ class Start extends React.Component {
     //Select Illness Screen
     else if (this.state.value == 1){
       ret1 = (
-        <div class="outer">//
+        <div class="outer">
           <div class="middle">
             <div class="inner">
               <div class="ill">
@@ -83,10 +83,13 @@ class Start extends React.Component {
       );
     }
     //no presciption, display options that are covered
+    ///TODO: ad llookup button
     else if(this.state.value == 3) {
       var info = "blank";
       if (illnessVal === 'flu') {
-        //alert("bro")
+        //set info in here?
+        //or could just hardcode lmfao
+        info = "tamaflu";
       }
       else if(illnessVal === 'strep') {
         //alert("yo");
@@ -96,7 +99,11 @@ class Start extends React.Component {
         <div class="middle">
         <div class="inner">
           <div class='ill'>
-            <h2>{info}</h2>
+            <h2> Here are your availible options:</h2>
+            <hr></hr>
+            <p>{info}</p>
+            <hr></hr>
+            <button class="cool" onclick={() => noWork()}>Lookup Medicine</button>
           </div>
         </div>
         </div>
@@ -117,6 +124,9 @@ export const transition = (value)=>{
     globalState.setState({value: value});
   else 
     alert("ERROR");
+}
+export const noWork = () => {
+  alert("Sorry, this functionality is coming soon! Please check back later.");
 }
 
 export const getIllnessVal = (value)=>{

@@ -7,7 +7,7 @@ class InsuranceSelect extends React.Component {
 constructor(props) {
     super(props);
     this.state = {
-        value: '-Select Value-',
+        value: 'xxx',
         flag1: 'xxx'
     };
     this.handleChange = this.handleChange.bind(this);
@@ -16,9 +16,11 @@ constructor(props) {
 }
     handlePrint() {
         //TODO: handle "x" cases, make the transition invalid
-        if (this.state.value != 'xxx') {
-            if(this.state.flag1 === 'yes')
-                transition(4);//Enter prescription name
+        if (this.state.value != "xxx") {
+            if(this.state.flag1 === 'yes'){
+                alert("The prescription lookup service is coming soon! Feel free to explore the options by selecting no.");
+                //transition(4);//Enter prescription name
+            }
             else
                 transition(3);
             //transition(3);//remove this later, switch numbers.
@@ -40,14 +42,14 @@ constructor(props) {
             <div>
             <div>
                 <select class="dropdown" onChange={this.handleChange}>
-                    <option value="xxx">-Select Insurance-</option>
+                    <option value="xxx">-Select-</option>
                     <option value="Blue Cross Blue Shield">Blue Cross Blue Shield</option>
                     <option value="Aetna">Aetna</option>
                     <option value="Cigna">Cigna</option>
                 </select>
                 <h2>Do you have a Prescription?</h2>
                 <select class="dropdown" onChange={this.handleChange2}>
-                    <option value ='xxx'>-Select-</option>
+                    <option value ="xxx">-Select-</option>
                     <option value="yes">Yes</option>
                     <option value="no">No</option>
                 </select>

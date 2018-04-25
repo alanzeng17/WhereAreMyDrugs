@@ -108,7 +108,7 @@ li a {
 }
 
 h1 {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: Arial;
   font-weight: 300;
 }
 h2 {
@@ -119,12 +119,14 @@ h4 {
   font-family: Palantino;
   font-weight: 10;
 }
+p {
+  font-family: Palantino;
+}
 
 /* Illness Component */
 label {
   font-weight: 10;
   font-size: 10px;
-  font-family: Arial;
 }
 select {
   position: relative;

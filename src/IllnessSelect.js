@@ -6,19 +6,19 @@ class IllnessSelect extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
-        value: '-Select Value-'
+        value: 'xxx'
       };
       this.handleChange = this.handleChange.bind(this);
       this.handlePrint = this.handlePrint.bind(this);
     }
 
      handlePrint() {
-      if (this.state.value) {
+      if (this.state.value != "xxx") {
         transition(2);
         getIllnessVal(this.state.value);
       }
       else {
-        alert("failure");
+        alert("Please select an illness.");
       }
     }
   
@@ -31,7 +31,7 @@ class IllnessSelect extends React.Component {
         <div>
           <div>
             <select class="dropdown" onChange={this.handleChange}>
-              <option value="xxx">-Select Illness-</option>
+              <option value="xxx">-Select-</option>
               <option value="flu">Flu</option>
               <option value="strep">Strep Throat</option>
               <option value="mono">Mono</option>
